@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/3916c9545a.js" crossorigin="anonymous"></script>
+    <title>Media</title>
+</head>
+<body class="pink lighten-4">
+    <div class="container">
+        <h1 class="amber-text text-darken-4">Media</h1>
+        <!-- materialboxed -->
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="img/food3.jpg" class="materialboxed" alt="" width="100%">
+            </div>
+
+            <!--With Caption-->
+            <div class="col s12 m6">
+                <img src="img/food9.jpg" class="materialboxed" data-caption="This is my awesome photo" alt="" width="100%">
+            </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="img/food 1.jpg" alt="">
+                    <!-- Center Aligned Caption-->
+                    <div class="caption center-align">
+                        <h3 class="grey-text">Center Caption</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, architecto.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/food2.jpg" alt="">
+                    <!-- Center Aligned Caption-->
+                    <div class="caption left-align">
+                        <h3 class="grey-text">Left Caption</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, architecto.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/food3.jpg" alt="">
+                    <!-- Center Aligned Caption-->
+                    <div class="caption right-align">
+                        <h3 class="grey-text">Right Caption</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, architecto.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/food4.jpg" alt="">
+                    <!-- Center Aligned Caption-->
+                    <div class="caption center-align">
+                        <h3 class="grey-text">Center Caption</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, architecto.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/food5.jpg" alt="">
+                    <!-- Center Aligned Caption-->
+                    <div class="caption left-align">
+                        <h3 class="grey-text">Left Caption</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, architecto.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <br>
+        <!-- Responsive Image-->
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="img/food8.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s12 m6">
+                <img src="img/food7.jpg" alt="" class="responsive-img circle">
+            </div>
+        </div>
+
+        <!-- Resposive video Embed-->
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="video-container">
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/5vy9HeL8mOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <!-- Responsive Video Element-->
+                <video class="resposive-video" controls width="100%">
+                    <source src="cooking video/video1.mp4">
+                </video>
+            </div>
+        </div>
+        <!-- End of Container -->
+    </div>
+
+    
+    
+
+    <!-- JQuery Cdn-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    // Material Box Init
+    $(document).ready(function(){
+    $('.materialboxed').materialbox();
+        //Slider
+        $('.slider').slider({
+            indicators: false,
+            height: 500,
+            interval: 3000
+        });
+    });
+</script>
+</body>
+</html>

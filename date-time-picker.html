@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <!-- Compiled and minified css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/3916c9545a.js" crossorigin="anonymous"></script>
+    <style>
+        .datepicker-date-display {
+            background: orange !important;
+        }
+    </style>
+    <title>Date and Time Picker</title>
+</head>
+<body class="grey lighten-4">
+
+    <div class="container">
+        <h1 class="amber-text">Date and Time Picker</h1>
+        <form>
+            <div class="input-field">
+                <input type="text" class="datepicker">
+                <label for="date">Date</label>
+            </div>
+            <div class="input-field">
+                <input type="text" class="timepicker">
+                <label for="date">Time</label>
+            </div>
+        </form>
+    </div>
+
+
+
+        <!-- JQuery Cdn-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        
+
+    <script>
+        $(document).ready(function(){
+            // Date Init
+            $('.datepicker').datepicker();
+            // Time Init
+            $('.timepicker').timepicker();
+
+        });
+
+    </script>   
+</body>
+</html>
